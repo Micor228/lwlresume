@@ -5,17 +5,17 @@ $(function(){
             lineColor: '#fff',
             parallax: false
     });
-//     $(window).resize(function(){
-//         var ph = $('.person').height();
-//         var b = $(window).height()-ph;
-//         if(b>=0)
-//         {
-//             $('.person').css('margin-top', b/2+'px');
-//         }
-//         else{
-//             $('.person').css('margin-top', '0px');
-//         }
-//     }).resize()
+    $(window).resize(function(){
+        var ph = $('.person').height();
+        var b = $(window).height()-ph;
+        if(b>=0)
+        {
+            $('.person').css('margin-top', b/2+'px');
+        }
+        else{
+            $('.person').css('margin-top', '0px');
+        }
+    }).resize()
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
         $(this).prev('li').stop().animate({width:'0%'}, 400,function(){
