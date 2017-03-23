@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+      .aa { font-style: italic;}
+    </style>
+</head>
+<body>
+<div id="hit">
+    
+</div>
+
+</body>
+<script type="text/javascript">
+if (localStorage.pagecount)
+{
+localStorage.pagecount=Number(localStorage.pagecount) +1;
+}
+else
+{
+localStorage.pagecount=1;
+}
+document.write("欢迎访问柯乐义网，您对本页访问了"+ localStorage.pagecount + "次。");
+</script>
+</html>
