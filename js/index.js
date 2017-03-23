@@ -6,12 +6,10 @@ $(function(){
             parallax: false
     });
     $(window).resize(function(){
-        var poldh = $('.person').height();
-        var yheight = $('.person').outerHeight(true)-poldh;
-        var heightall = $(window).height()-2*yheight;
-        //heightall>=560?$('.person').height(heightall):$('.person').height(560);
-        $('.person').height(heightall);
-    }).resize();
+        var ph = $('.person').height();
+        var b = $(window).height()-ph;
+        $('.person').css('margin-top', b/2+'px');
+    }).resize()
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
         $(this).prev('li').stop().animate({width:'0%'}, 400,function(){
