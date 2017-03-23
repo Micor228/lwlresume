@@ -7,12 +7,9 @@ $(function(){
     });
     $(window).resize(function(){
         var poldh = $('.person').height();
-        if(poldh>=560){
-            var yheight = $('.person').outerHeight(true)-poldh;
-            var heightall = $(window).height()-2*yheight;
-            $('.person').height(heightall);
-        }
-        else{poldh = 560}
+        var yheight = $('.person').outerHeight(true)-poldh;
+        var heightall = $(window).height()-2*yheight;
+        heightall>=560?$('.person').height(heightall):$('.person').height(560);
     }).resize();
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
