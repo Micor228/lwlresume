@@ -7,9 +7,11 @@ $(function(){
     });
     $(window).resize(function(){
         var poldh = $('.person').height();
-        var yheight = $('.person').outerHeight(true)-poldh;
-        var heightall = $(window).height()-2*yheight;
-        $('.person').height(heightall);
+        if(poldh>=560){
+            var yheight = $('.person').outerHeight(true)-poldh;
+            var heightall = $(window).height()-2*yheight;
+            $('.person').height(heightall);
+        }
     }).resize();
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
