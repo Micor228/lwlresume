@@ -9,7 +9,8 @@ $(function(){
         var poldh = $('.person').height();
         var yheight = $('.person').outerHeight(true)-poldh;
         var heightall = $(window).height()-2*yheight;
-        heightall>=560?$('.person').height(heightall):$('.person').height(560);
+        //heightall>=560?$('.person').height(heightall):$('.person').height(560);
+        $('.person').height(heightall);
     }).resize();
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
