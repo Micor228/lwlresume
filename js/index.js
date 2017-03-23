@@ -5,6 +5,12 @@ $(function(){
             lineColor: '#fff',
             parallax: false
     });
+    $(window).resize(function(){
+        var poldh = $('.person').height();
+        var yheight = $('.person').outerHeight(true)-poldh;
+        var heightall = $(window).height()-2*yheight;
+        $('.person').height(heightall);
+    }).resize();
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
         $(this).prev('li').stop().animate({width:'0%'}, 400,function(){
