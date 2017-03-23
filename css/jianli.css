@@ -28,7 +28,7 @@ strong { font-weight: normal;}
 }
 .person { 
     width: 80%;
-    min-height: 560px; 
+    height: 560px; 
     background: rgba(218,201,166,0.3);
     margin-left: 10%;
     box-sizing: border-box; 
