@@ -8,7 +8,13 @@ $(function(){
     $(window).resize(function(){
         var ph = $('.person').height();
         var b = $(window).height()-ph;
-        $('.person').css('margin-top', b/2+'px');
+        if(b>=0)
+        {
+            $('.person').css('margin-top', b/2+'px');
+        }
+        else{
+            $('.person').css('margin-top', '0px');
+        }
     }).resize()
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
