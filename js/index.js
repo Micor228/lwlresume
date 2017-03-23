@@ -12,6 +12,7 @@ $(function(){
             var heightall = $(window).height()-2*yheight;
             $('.person').height(heightall);
         }
+        else{poldh = 560}
     }).resize();
     $('.person-con li:odd').hover(function() {
         $(this).stop().animate({width:'100%'}, 400)
