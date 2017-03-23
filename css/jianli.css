@@ -415,10 +415,10 @@ strong { font-weight: normal;}
     display:inline-block;
 }
 .jiawen {
-    background: url(../img/jiawen.jpg) no-repeat;
-    background-size: auto 100%;
+    background: url(../img/jiawen.jpg) center;
+    background-size: 100% auto;
 }
 .tracy{
-    background: url(../img/tracy.jpg) no-repeat center;
-    background-size: auto 100%;
+    background: url(../img/tracy.jpg)center;
+    background-size: 100% auto;
 }
