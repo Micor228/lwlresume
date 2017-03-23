@@ -6,7 +6,7 @@ $(function(){
             parallax: false
     });
     $(window).resize(function(){
-        var ph = $('.person').height();
+        var ph = $('.person').innerHeight();
         var b = $(window).height()-ph;
         if(b>=0)
         {
