@@ -424,3 +424,72 @@ strong { font-weight: normal;}
     background: url(../img/tracy.jpg)center;
     background-size: 100% auto;
 }
+.a{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #CC5668;
+}
+.a:before {
+    content: '';
+    background:#CC5668;
+    width:50%;
+    height:100%;
+    position: absolute;
+    margin-left: 50%;
+    border-radius: 0 100% 100% 0/50%;
+}
+.a:after {
+    content: '';
+    background: #CC5668;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+.b:after {
+    transform:rotate(108deg);
+ }
+.c:after {
+    transform:rotate(108deg);
+ }
+.d:after {
+    transform:rotate(72deg);
+ }
+.bingtu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width:33%;
+    font-family: hanyi;
+}
+.bingtu li span {
+    position: absolute;
+    display: block;
+    padding: 0 16px;
+    background: #CC5668;
+    color: white;
+    top: 50%;
+    left: 103px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    height: 50px;
+    border-radius: 0 50px 50px 0;
+    line-height: 50px;
+    overflow: hidden;
+    font-family: hanyi;
+}
+.bingtu li span:before{
+    content: '';
+    height: 50px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+    left: -10px;
+}
