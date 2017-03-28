@@ -1,12 +1,14 @@
 *{padding:0;margin: 0;}
-body { background:#DAC9A6 ;}
+body { background:#DAC9A6 ;
+    font-family:'HYJinKaiJ9b9ff1f9e187f7';
+}
 li { list-style: none;}
 a { text-decoration: none;}
 strong { font-weight: normal;}
-@font-face {
+/*@font-face {
     font-family: hanyi;
     src: url('../fonts/hanyi.ttf')
-}
+}*/
 @media screen and (max-width: 1200px){
     .person-about{
     width: 100%!important;
@@ -73,7 +75,6 @@ strong { font-weight: normal;}
     position: absolute;
     right: -70%;
     top: -20%;
-    font-family: hanyi;
     background: white;
     border-radius: 10px;
     padding: 5px;
@@ -83,8 +84,8 @@ strong { font-weight: normal;}
 }
 .person-con { 
     box-sizing: border-box;
-    padding:20px; }
-.person-con strong,.person-con span { font-family: hanyi;}
+    padding:20px; 
+}
 .person-con strong {  font-size: 17px;}
 .person-con li { 
     height:40px;
@@ -133,11 +134,11 @@ strong { font-weight: normal;}
     border-radius: 25px;
 }
 .main-tab li>span { color:#CC5668;}
+.main-tab li>span:hover { color:black;transition:all 0.5s linear;}
 .tab-title {     position: absolute;
     top: 11px;
     left: 50px;
     font-size: 20px;
-    font-family: hanyi;
     white-space: nowrap;
     color:#CC5668;
     opacity:0;
@@ -161,7 +162,6 @@ strong { font-weight: normal;}
     display:none;
 }
 .jineng { 
-    font-family: hanyi; 
     background:white;
     border-radius: 5px;
     box-sizing: border-box;
@@ -214,7 +214,6 @@ strong { font-weight: normal;}
     transform: translateY(-50%);
 }
 .com-detail { 
-    font-family: hanyi;
     float:left;
     height:100%;
     width: 60%;
@@ -245,7 +244,6 @@ strong { font-weight: normal;}
 .demo {
     height:100%;
     width:100%;
-    font-family: hanyi;
 }
 .demo li { 
     width: 48%;
@@ -392,7 +390,6 @@ strong { font-weight: normal;}
 }
 .total-t { 
     position:absolute;
-    font-family: hanyi;
     right:0px;
     color:#CC5668;
 }
@@ -466,7 +463,6 @@ strong { font-weight: normal;}
     list-style: none;
     float: left;
     width:33%;
-    font-family: hanyi;
 }
 .bingtu li span {
     position: absolute;
@@ -482,7 +478,6 @@ strong { font-weight: normal;}
     border-radius: 0 50px 50px 0;
     line-height: 50px;
     overflow: hidden;
-    font-family: hanyi;
 }
 .bingtu li span:before{
     content: '';
