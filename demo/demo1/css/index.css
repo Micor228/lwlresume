@@ -1,5 +1,5 @@
 * { padding: 0; margin: 0;}
-body { font-family: Microsoft Yahei; background:#F3F3F3;}
+body { font-family: Microsoft Yahei; background:#F3F3F3;min-width:1349px;}
 .le { float: left;}
 .ri { float:right;}
 .g-w { width: 1170px; margin:0 auto;}
