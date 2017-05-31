@@ -208,7 +208,7 @@
 .details {
     height:270px;
     padding-top: 30px;
-
+    overflow:hidden;
 }
 .detail-con {
         width:68%;
