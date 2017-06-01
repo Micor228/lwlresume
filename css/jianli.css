@@ -303,8 +303,8 @@ strong { font-weight: normal;}
     overflow: hidden;
 }
 .lione {
-    top:0;
-    left:0;
+    top:20%;
+    left:24%;
 }
 .litwo {
     top:10%;
@@ -312,8 +312,8 @@ strong { font-weight: normal;}
 
 }
 .lithree {
-    top:20%;
-    left:24%;
+    top:0%;
+    left:0%;
 }
 .lithree .styleicon{
     opacity:0.1;
